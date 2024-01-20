@@ -1,5 +1,10 @@
 # Hướng dẫn cài đặt
 
+## Thông tin phiên bản
+
+- Odoo 17
+- Đã thêm thư viện Odoo 17 Accounting
+
 ## Chuẩn bị
 
 - (Docker Desktop)[https://www.docker.com/products/docker-desktop/]
