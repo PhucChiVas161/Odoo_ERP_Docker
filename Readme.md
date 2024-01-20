@@ -7,10 +7,10 @@
 
 ## Chuẩn bị
 
-- (Docker Desktop)[https://www.docker.com/products/docker-desktop/]
-- Cài đặt (Docker Desktop)[https://www.docker.com/products/docker-desktop/]
+- [Docker Desktop](https://www.docker.com/products/docker-desktop/)
+- Cài đặt [Docker Desktop](https://www.docker.com/products/docker-desktop/)
   Hoặc
-- Mở CMD bằng cách nhấn nút Windows (Trên bàn phím có hình logo Windows, gần nút ctrl trái) + R gõ CMD hoặc tham khảo (tại đây)[https://quantrimang.com/cong-nghe/thu-thuat-khoi-chay-command-prompt-nhanh-chong-tren-windows-10-118680]
+- Mở CMD bằng cách nhấn nút Windows (Trên bàn phím có hình logo Windows, gần nút ctrl trái) + R gõ CMD hoặc tham khảo [tại đây](https://quantrimang.com/cong-nghe/thu-thuat-khoi-chay-command-prompt-nhanh-chong-tren-windows-10-118680)
 - Gõ lệnh hoặc copy dán vào
 
 ```
