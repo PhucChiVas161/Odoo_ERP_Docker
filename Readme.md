@@ -24,7 +24,7 @@ winget install -e --id Docker.DockerDesktop
 - Tải về ngay mục [Release](https://github.com/PhucChiVas161/odoo-erp-docker/releases)
 - Giải nén thư mục
 - Truy cập vào thư mục vừa giải nén
-- Rê chuột vào chổ trống trong thư mục, giữ nút Shift và chuột phải, chọn Open with Terminal hoặc Open with comment Promtp
+- Rê chuột vào chổ trống trong thư mục, giữ nút Shift và chuột phải, chọn Open with Terminal hoặc Open with Command Prompt
 - Sau đó hiển thị cửa sổ màu đen, gõ lệnh sau:
 
 ```
