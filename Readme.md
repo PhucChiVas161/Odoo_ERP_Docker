@@ -15,7 +15,7 @@
 - Không tốn nhiểu tài nguyên khi chạy (Bật là chạy, tắt là ngừng :)))). Còn theo cách cài đặt thông thường thì nó luôn luôn chạy, tốn tài nguyên của máy)
 - Support đa nền tảng
 
-## Nhược điểm
+### Nhược điểm
 - Cần có 1 tí kiến thức về technical.
 - Dung lượng lớn hơn (Tầm 50mb, không đáng kể)
 
