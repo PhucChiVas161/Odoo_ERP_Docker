@@ -19,7 +19,7 @@
 - Cần có 1 tí kiến thức về technical.
 - Dung lượng lớn hơn (Tầm 50mb, không đáng kể)
 
-## Chuẩn bị (Cách này danh cho windowns)
+## Chuẩn bị (Cách này dành cho windowns)
 
 - [Docker Desktop](https://www.docker.com/products/docker-desktop/)
 - Cài đặt [Docker Desktop](https://www.docker.com/products/docker-desktop/)
@@ -49,5 +49,5 @@ docker-compose up -d
 - Truy cập odoo bằng cách truy cập trên trình duyệt và gõ http://localhost:8069
 
 ## Video hướng dẫn
-[Windows](https://www.youtube.com/watch?v=FjjfyuB0In0)
-[MacOS (Macbook, MacPro,... nói chung là của Apple)](https://www.youtube.com/watch?v=ZMmPEiG77Sg)
+- [Windows](https://www.youtube.com/watch?v=FjjfyuB0In0)
+- [MacOS (Macbook, MacPro,... nói chung là của Apple)](https://www.youtube.com/watch?v=ZMmPEiG77Sg)
