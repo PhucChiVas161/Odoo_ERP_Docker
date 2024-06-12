@@ -1,11 +1,25 @@
-# Hướng dẫn cài đặt
+# Hướng dẫn cài đặt (Có video hướng dẫn phía bên dưới)
 
 ## Thông tin phiên bản
 
 - Odoo 17
 - Đã thêm thư viện Odoo 17 Accounting
+## Ưu và nhược của cách này
 
-## Chuẩn bị
+### Ưu điểm
+
+- Dễ triển khai hơn so với cách cài đặt thông thường
+- Dễ sửa lỗi khi có lỗi xảy ra
+- Dễ xóa (Cài theo cách thông thường, nếu cài không cẩn thận thì sẽ bị mất dữ liệu, còn cách này thì không)
+- Đã tích hợp các module cần thiệt, không cần phải cài thêm bất cứ thứ gì
+- Không tốn nhiểu tài nguyên khi chạy (Bật là chạy, tắt là ngừng :)))). Còn theo cách cài đặt thông thường thì nó luôn luôn chạy, tốn tài nguyên của máy)
+- Support đa nền tảng
+
+## Nhược điểm
+- Cần có 1 tí kiến thức về technical.
+- Dung lượng lớn hơn (Tầm 50mb, không đáng kể)
+
+## Chuẩn bị (Cách này danh cho windowns)
 
 - [Docker Desktop](https://www.docker.com/products/docker-desktop/)
 - Cài đặt [Docker Desktop](https://www.docker.com/products/docker-desktop/)
@@ -18,7 +32,6 @@ winget install -e --id Docker.DockerDesktop
 ```
 
 - Done
-
 ## Cài đặt
 
 - Tải về ngay mục [Release](https://github.com/PhucChiVas161/odoo-erp-docker/releases)
@@ -34,3 +47,7 @@ docker-compose up -d
 - Lệnh đó sẽ chạy cài đặt odoo, tốc độ phụ thuộc vào mạng và máy
 - Sau khi chạy và cài đặt xong, sẽ xuất hiện kết quả là Created màu xanh là chạy thành công
 - Truy cập odoo bằng cách truy cập trên trình duyệt và gõ http://localhost:8069
+
+## Video hướng dẫn
+[Windows](https://www.youtube.com/watch?v=FjjfyuB0In0)
+[MacOS (Macbook, MacPro,... nói chung là của Apple)](https://www.youtube.com/watch?v=ZMmPEiG77Sg)
