@@ -1,4 +1,4 @@
-# Hướng dẫn cài đặt (Có video hướng dẫn phía bên dưới)
+# Hướng dẫn cài đặt (Có video hướng dẫn phía bên dưới) (ĐỌC HƯỚNG DẪN THẬT KĨ)
 
 ## Thông tin phiên bản
 
