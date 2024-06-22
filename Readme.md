@@ -51,3 +51,10 @@ docker-compose up -d
 ## Video hướng dẫn
 - [Windows](https://www.youtube.com/watch?v=FjjfyuB0In0)
 - [MacOS (Macbook, MacPro,... nói chung là của Apple)](https://www.youtube.com/watch?v=ZMmPEiG77Sg)
+
+## Những lỗi phổ biến (Windows)
+- Khi cài và chạy lần đầu. Docker có thể hiển thị "Docker Engine stopped". Thì bật Command Prompt lên và gõ lệnh:
+```
+wsl --update
+```
+- Sau khi nó chạy xong 100% thì bật lại docker, thấy nó quay quay ghi là "Docker Engine starting..." đợi nó chạy xong là được
