@@ -1,13 +1,13 @@
 services:
     web:
         image: odoo:17.0
+        container_name: odoo
         depends_on:
             - db
         ports:
             - '8069:8069'
         volumes:
             - ./addons:/mnt/extra-addons
-            - ./config:/etc/odoo
     db:
         image: postgres
         environment:
