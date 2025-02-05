@@ -48,7 +48,8 @@
 - **Kiểm Tra Ảo Hóa CPU**
   1. Mở **Task Manager** (`Ctrl + Shift + Esc`)
   2. Chuyển sang tab **Performance**
-  3. Tìm mục **Virtualization**
+  3. Chọn mục **CPU**
+  4. Tìm mục **Virtualization**
      - Nếu hiển thị **Enabled**, máy bạn hỗ trợ ảo hóa.
      - Nếu hiển thị **Disabled**, cần bật ảo hóa trong BIOS.
 
