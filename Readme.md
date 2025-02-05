@@ -1,60 +1,141 @@
-# Hướng dẫn cài đặt (Có video hướng dẫn phía bên dưới) (ĐỌC HƯỚNG DẪN THẬT KĨ)
+# Hướng Dẫn Cài Đặt Odoo (Có Video Hướng Dẫn Phía Dưới)  
+**(Đọc Hướng Dẫn Thật Kỹ Trước Khi Cài Đặt)**
 
-## Thông tin phiên bản
+---
 
-- Odoo 17
-- Đã thêm thư viện Odoo 17 Accounting
-## Ưu và nhược của cách này
+## 🔹 Thông Tin Phiên Bản
 
-### Ưu điểm
+- **Odoo 17 & Odoo 18**
+- Đã tích hợp thư viện **Odoo Accounting**
 
-- Dễ triển khai hơn so với cách cài đặt thông thường
-- Dễ sửa lỗi khi có lỗi xảy ra
-- Dễ xóa (Cài theo cách thông thường, nếu cài không cẩn thận thì sẽ bị mất dữ liệu, còn cách này thì không)
-- Đã tích hợp các module cần thiệt, không cần phải cài thêm bất cứ thứ gì
-- Không tốn nhiểu tài nguyên khi chạy (Bật là chạy, tắt là ngừng :)))). Còn theo cách cài đặt thông thường thì nó luôn luôn chạy, tốn tài nguyên của máy)
-- Support đa nền tảng
+---
 
-### Nhược điểm
-- Cần có 1 tí kiến thức về technical.
-- Dung lượng lớn hơn (Tầm 50mb, không đáng kể)
+## ✅ Ưu & Nhược Điểm
 
-## Chuẩn bị (Cách này dành cho windowns)
+### 🔥 Ưu Điểm
+- **Dễ triển khai** hơn so với cách cài đặt thủ công.
+- **Dễ khắc phục lỗi** nếu có sự cố xảy ra.
+- **Dễ gỡ bỏ** mà không lo mất dữ liệu như cách cài đặt truyền thống.
+- **Tích hợp sẵn module cần thiết**, không cần cài đặt thêm.
+- **Tối ưu tài nguyên**, chỉ chạy khi cần, không tốn tài nguyên khi tắt.
+- **Hỗ trợ đa nền tảng** (Windows, MacOS, Linux).
 
-- [Docker Desktop](https://www.docker.com/products/docker-desktop/)
-- Cài đặt [Docker Desktop](https://www.docker.com/products/docker-desktop/)
-### Hoặc
-- Mở CMD bằng cách nhấn nút Windows (Trên bàn phím có hình logo Windows, gần nút ctrl trái) + R gõ CMD hoặc tham khảo [tại đây](https://quantrimang.com/cong-nghe/thu-thuat-khoi-chay-command-prompt-nhanh-chong-tren-windows-10-118680)
-- Gõ lệnh hoặc copy dán vào
+### ⚠️ Nhược Điểm
+- Cần **một ít kiến thức kỹ thuật**.
+- **Dung lượng lớn hơn một chút** (~50MB, nhưng không đáng kể so với lợi ích mang lại).
 
-```
-winget install -e --id Docker.DockerDesktop
-```
+---
 
-- Done
-## Cài đặt
+## 📌 Yêu Cầu Thiết Bị (Windows & MacOS)
 
-- Tải về ngay mục [Release](https://github.com/PhucChiVas161/odoo-erp-docker/releases)
-- Giải nén thư mục
-- Truy cập vào thư mục vừa giải nén
-- Rê chuột vào chổ trống trong thư mục, giữ nút Shift và chuột phải, chọn Open with Terminal hoặc Open with Command Prompt
-- Sau đó hiển thị cửa sổ màu đen, gõ lệnh sau:
+### 🔹 Cấu Hình Tối Thiểu
+#### Windows:
+- **Hệ điều hành**: Windows 10 64-bit trở lên
+- **CPU**: Hỗ trợ ảo hóa (VT-x hoặc AMD-V)
+- **RAM**: Tối thiểu 4GB (khuyến nghị 8GB trở lên)
+- **Ổ cứng**: Tối thiểu 20GB dung lượng trống
+- **Mạng**: Kết nối internet ổn định để tải các container Docker
 
-```
-docker-compose up -d
-```
+#### MacOS:
+- **Hệ điều hành**: macOS 11 (Big Sur) trở lên
+- **CPU**: Chip Intel hoặc Apple Silicon (M1, M2,...)
+- **RAM**: Tối thiểu 4GB (khuyến nghị 8GB trở lên)
+- **Ổ cứng**: Tối thiểu 20GB dung lượng trống
+- **Mạng**: Kết nối internet ổn định để tải các container Docker
 
-- Lệnh đó sẽ chạy cài đặt odoo, tốc độ phụ thuộc vào mạng và máy
-- Sau khi chạy và cài đặt xong, sẽ xuất hiện kết quả là Created màu xanh là chạy thành công
-- Truy cập odoo bằng cách truy cập trên trình duyệt và gõ http://localhost:8069
+### 🔹 Cách Kiểm Tra Cấu Hình
+#### Windows:
+- **Kiểm Tra Ảo Hóa CPU**
+  1. Mở **Task Manager** (`Ctrl + Shift + Esc`)
+  2. Chuyển sang tab **Performance**
+  3. Tìm mục **Virtualization**
+     - Nếu hiển thị **Enabled**, máy bạn hỗ trợ ảo hóa.
+     - Nếu hiển thị **Disabled**, cần bật ảo hóa trong BIOS.
 
-## Video hướng dẫn
-- [Windows](https://www.youtube.com/watch?v=FjjfyuB0In0)
-- [MacOS (Macbook, MacPro,... nói chung là của Apple)](https://www.youtube.com/watch?v=ZMmPEiG77Sg)
+#### MacOS:
+- **Kiểm Tra Dung Lượng Ổ Cứng**
+  1. Nhấn **Cmd + Space**, gõ "About This Mac" rồi nhấn **Enter**.
+  2. Chọn tab **Storage** để kiểm tra dung lượng trống.
 
-## Những lỗi phổ biến (Windows)
-- Khi cài và chạy lần đầu. Docker có thể hiển thị "Docker Engine stopped". Thì bật Command Prompt lên và gõ lệnh:
-```
-wsl --update
-```
-- Sau khi nó chạy xong 100% thì bật lại docker, thấy nó quay quay ghi là "Docker Engine starting..." đợi nó chạy xong là được
+---
+
+## 📌 Chuẩn Bị (Dành Cho Windows & MacOS)
+
+### 🔹 Windows:
+#### Cách 1: Cài Đặt Docker Desktop
+1. Tải và cài đặt **[Docker Desktop](https://www.docker.com/products/docker-desktop/)**.
+
+#### Cách 2: Cài Đặt Docker Qua Command Prompt
+1. Mở **CMD** (`Windows + R`, nhập `cmd`, nhấn **Enter**).
+2. Chạy lệnh sau để cài đặt Docker Desktop:
+   ```sh
+   winget install -e --id Docker.DockerDesktop
+   ```
+3. Hoàn tất quá trình cài đặt.
+
+### 🔹 MacOS:
+1. Tải **[Docker Desktop for Mac](https://www.docker.com/products/docker-desktop/)** và chọn đúng phiên bản (**Intel Chip** là dành cho các máy chạy chip Intel. **Apple Silicon** là dành cho các máy chạy chip M1,M2,...).
+2. Mở file `.dmg`, kéo ứng dụng **Docker** vào thư mục **Applications**.
+3. Mở Docker, chấp nhận điều khoản sử dụng.
+
+---
+
+## 🚀 Cài Đặt Odoo 17 / Odoo 18
+
+1. Tải về phiên bản mới nhất tại **[Release](https://github.com/PhucChiVas161/odoo-erp-docker/releases)**.
+2. Giải nén thư mục vừa tải xuống.
+3. Truy cập vào thư mục đã giải nén.
+4. Nhấp chuột phải vào vùng trống trong thư mục, giữ **Shift**, chọn **Open with Terminal** hoặc **Open with Command Prompt**.
+5. Nhập lệnh sau để khởi chạy Odoo:
+   ```sh
+   docker-compose up -d
+   ```
+6. Quá trình cài đặt sẽ diễn ra, tốc độ phụ thuộc vào tốc độ mạng và cấu hình máy.
+7. Khi xuất hiện dòng **Created (màu xanh)**, quá trình cài đặt đã hoàn tất.
+8. Truy cập Odoo bằng cách mở trình duyệt và nhập:
+   ```
+   http://localhost:8069
+   ```
+
+---
+
+## 🔄 Cách Restart Lại Odoo Nếu Gặp Lỗi (Windows & MacOS)
+1. Mở **Command Prompt (Windows)** hoặc **Terminal (MacOS)** trong thư mục chứa file `docker-compose.yml`.
+2. Dừng container:
+   ```sh
+   docker-compose down
+   ```
+3. Khởi động lại container:
+   ```sh
+   docker-compose up -d
+   ```
+4. Đợi một lúc và kiểm tra lại bằng cách truy cập:
+   ```
+   http://localhost:8069
+   ```
+
+---
+
+## 🎥 Video Hướng Dẫn
+
+- **Windows**: [Xem video hướng dẫn](https://www.youtube.com/watch?v=FjjfyuB0In0)
+- **MacOS (Macbook, MacPro, iMac, v.v.)**: [Xem video hướng dẫn](https://www.youtube.com/watch?v=ZMmPEiG77Sg)
+
+---
+
+## ❌ Những Lỗi Phổ Biến (Windows) & Cách Khắc Phục
+
+### 🔹 Lỗi "Docker Engine Stopped" Khi Chạy Lần Đầu
+📌 **Giải pháp:**
+1. Mở **Command Prompt** (CMD) dưới quyền **Administrator**.
+2. Chạy lệnh sau:
+   ```sh
+   wsl --update
+   ```
+3. Đợi quá trình cập nhật hoàn tất (**100%**).
+4. Mở lại **Docker Desktop**, nếu thấy "Docker Engine starting..." thì chờ một chút để nó khởi động.
+
+---
+
+💡 **Chúc bạn cài đặt thành công!** 🚀
+
