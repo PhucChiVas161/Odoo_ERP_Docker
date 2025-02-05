@@ -104,7 +104,7 @@
 1. Mở **Command Prompt (Windows)** hoặc **Terminal (MacOS)** trong thư mục chứa file `docker-compose.yml`.
 2. Dừng container:
    ```sh
-   docker-compose down
+   docker-compose down -v
    ```
 3. Khởi động lại container:
    ```sh
