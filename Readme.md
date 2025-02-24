@@ -97,6 +97,7 @@
    ```
    http://localhost:8069
    ```
+9. Những lần sau chạy, chỉ cần bật **Docker Desktop** tìm dòng **odoo_erp_docker** và bấm ⏯️ là chạy được
 
 ---
 
