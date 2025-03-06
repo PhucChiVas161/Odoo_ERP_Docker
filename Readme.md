@@ -132,7 +132,7 @@
 1. Mở **Command Prompt** (CMD) dưới quyền **Administrator**.
 2. Chạy lệnh sau:
    ```sh
-   wsl --update
+   wsl --install --no-distribution
    ```
 3. Đợi quá trình cập nhật hoàn tất (**100%**).
 4. Mở lại **Docker Desktop**, nếu thấy "Docker Engine starting..." thì chờ một chút để nó khởi động.
