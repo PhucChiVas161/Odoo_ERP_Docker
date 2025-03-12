@@ -63,7 +63,7 @@
 ## 📌 Chuẩn Bị (Dành Cho Windows & MacOS)
 
 ### 🔹 Windows:
-#### Cách 1: Cài Đặt Docker Desktop
+#### Cách 1: Cài Đặt Docker Desktop (Ưu tiên)
 1. Tải và cài đặt **[Docker Desktop](https://www.docker.com/products/docker-desktop/)**.
 
 #### Cách 2: Cài Đặt Docker Qua Command Prompt
