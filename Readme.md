@@ -1,6 +1,4 @@
-# Hướng Dẫn Cài Đặt Odoo (Có Video Hướng Dẫn Phía Dưới)
-
-**(Đọc Hướng Dẫn Thật Kỹ Trước Khi Cài Đặt)**
+# Hướng Dẫn Cài Đặt Odoo (Có Video Hướng Dẫn Phía Dưới) **(Đọc Hướng Dẫn Thật Kỹ Trước Khi Cài Đặt)**
 
 ---
 
@@ -33,7 +31,7 @@
 
 ### 🔹 Cấu Hình Tối Thiểu
 
-#### Windows:
+#### Windows
 
 -   **Hệ điều hành**: Windows 10 64-bit trở lên
 -   **CPU**: Hỗ trợ ảo hóa (VT-x hoặc AMD-V)
@@ -41,7 +39,7 @@
 -   **Ổ cứng**: Tối thiểu 20GB dung lượng trống
 -   **Mạng**: Kết nối internet ổn định để tải các container Docker
 
-#### MacOS:
+#### MacOS
 
 -   **Hệ điều hành**: macOS 11 (Big Sur) trở lên
 -   **CPU**: Chip Intel hoặc Apple Silicon (M1, M2,...)
@@ -51,7 +49,7 @@
 
 ### 🔹 Cách Kiểm Tra Cấu Hình
 
-#### Windows:
+#### Windows
 
 -   **Kiểm Tra Ảo Hóa CPU**
     1. Mở **Task Manager** (`Ctrl + Shift + Esc`)
@@ -61,7 +59,7 @@
         - Nếu hiển thị **Enabled**, máy bạn hỗ trợ ảo hóa.
         - Nếu hiển thị **Disabled**, cần bật ảo hóa trong BIOS.
 
-#### MacOS:
+#### MacOS
 
 -   **Kiểm Tra Dung Lượng Ổ Cứng**
     1. Nhấn **Cmd + Space**, gõ "About This Mac" rồi nhấn **Enter**.
@@ -71,7 +69,7 @@
 
 ## 📌 Chuẩn Bị (Dành Cho Windows & MacOS)
 
-### 🔹 Windows:
+### 🔹 Windows
 
 #### Cách 1: Cài Đặt Docker Desktop (Ưu tiên)
 
@@ -81,12 +79,14 @@
 
 1. Mở **CMD** (`Windows + R`, nhập `cmd`, nhấn **Enter**).
 2. Chạy lệnh sau để cài đặt Docker Desktop:
+
     ```sh
     winget install -e --id Docker.DockerDesktop
     ```
+
 3. Hoàn tất quá trình cài đặt.
 
-### 🔹 MacOS:
+### 🔹 MacOS
 
 1. Tải **[Docker Desktop for Mac](https://www.docker.com/products/docker-desktop/)** và chọn đúng phiên bản (**Intel Chip** là dành cho các máy chạy chip Intel. **Apple Silicon** là dành cho các máy chạy chip M1,M2,...).
 2. Mở file `.dmg`, kéo ứng dụng **Docker** vào thư mục **Applications**.
@@ -100,21 +100,26 @@
 2. Giải nén thư mục vừa tải xuống.
 3. Truy cập vào thư mục đã giải nén.
 4. Nhấp chuột phải vào vùng trống trong thư mục, giữ **Shift**, chọn **Open with Terminal** hoặc **Open with Command Prompt**.
-   **MacOS**
-   ![Hướng dẫn sử dụng](/IMAGE/step4_mac.gif)
-   **Windows**
+
+    - **MacOS**
+      ![Hướng dẫn sử dụng](/IMAGE/step4_mac.gif)
+    - **Windows**
 
 5. Nhập lệnh sau để khởi chạy Odoo:
+
     ```sh
     docker-compose up -d
     ```
+
 6. Quá trình cài đặt sẽ diễn ra, tốc độ phụ thuộc vào tốc độ mạng và cấu hình máy.
 7. Khi xuất hiện dòng **Created (màu xanh)**, quá trình cài đặt đã hoàn tất.
 8. Truy cập Odoo bằng cách mở trình duyệt và nhập:
-    ```
+
+    ```cmd
     http://localhost:8069
     ```
-9. Những lần sau chạy, chỉ cần bật **Docker Desktop** tìm dòng **odoo_erp_docker** và bấm ⏯️ và truy cập **http://localhost:8069** trên trình duyệt
+
+9. Những lần sau chạy, chỉ cần bật **Docker Desktop** tìm dòng **odoo_erp_docker** và bấm ⏯️ và truy cập **<http://localhost:8069>** trên trình duyệt
    ![Hướng dẫn sử dụng](/IMAGE/step9.gif)
 
 ---
@@ -123,14 +128,19 @@
 
 1. Mở **Command Prompt (Windows)** hoặc **Terminal (MacOS)** trong thư mục chứa file `docker-compose.yml`.
 2. Dừng container:
+
     ```sh
     docker-compose down -v
     ```
+
 3. Khởi động lại container:
+
     ```sh
     docker-compose up -d
     ```
+
 4. Đợi một lúc và kiểm tra lại bằng cách truy cập:
+
     ```
     http://localhost:8069
     ```
@@ -152,11 +162,14 @@
 
 1. Mở **Command Prompt** (CMD) dưới quyền **Administrator**.
 2. Chạy lệnh sau:
+
     ```sh
     wsl --install --no-distribution
     ```
-3. Đợi quá trình cập nhật hoàn tất (**100%**).
-4. Mở lại **Docker Desktop**, nếu thấy "Docker Engine starting..." thì chờ một chút để nó khởi động.
+
+3. Đợi quá trình cập hoàn tất (**100%**).
+4. Khởi động lại máy tính
+5. Mở lại **Docker Desktop**, nếu thấy "Docker Engine starting..." thì chờ một chút để nó khởi động.
 
 ---
 
