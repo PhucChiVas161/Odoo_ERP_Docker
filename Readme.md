@@ -139,6 +139,8 @@
     docker-compose up -d
     ```
 
+![Hướng dẫn sử dụng](/IMAGE/reset.gif)
+
 4. Đợi một lúc và kiểm tra lại bằng cách truy cập:
 
     ```
