@@ -101,9 +101,9 @@
 3. Truy cập vào thư mục đã giải nén.
 4. Nhấp chuột phải vào vùng trống trong thư mục, giữ **Shift**, chọn **Open with Terminal** hoặc **Open with Command Prompt**.
 
-    - **MacOS**
-      ![Hướng dẫn sử dụng](/IMAGE/step4_mac.gif)
-    - **Windows**
+-   **MacOS**
+    ![Hướng dẫn sử dụng](/IMAGE/step4_mac.gif)
+-   **Windows**
 
 5. Nhập lệnh sau để khởi chạy Odoo:
 
