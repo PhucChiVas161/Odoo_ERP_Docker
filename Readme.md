@@ -100,6 +100,10 @@
 2. Giải nén thư mục vừa tải xuống.
 3. Truy cập vào thư mục đã giải nén.
 4. Nhấp chuột phải vào vùng trống trong thư mục, giữ **Shift**, chọn **Open with Terminal** hoặc **Open with Command Prompt**.
+   **MacOS**
+   ![Hướng dẫn sử dụng](/IMAGE/step4_mac.gif)
+   **Windows**
+
 5. Nhập lệnh sau để khởi chạy Odoo:
     ```sh
     docker-compose up -d
@@ -110,7 +114,7 @@
     ```
     http://localhost:8069
     ```
-9. Những lần sau chạy, chỉ cần bật **Docker Desktop** tìm dòng **odoo_erp_docker** và bấm ⏯️ là chạy được
+9. Những lần sau chạy, chỉ cần bật **Docker Desktop** tìm dòng **odoo_erp_docker** và bấm ⏯️ và truy cập **http://localhost:8069** trên trình duyệt
    ![Hướng dẫn sử dụng](/IMAGE/step9.gif)
 
 ---
