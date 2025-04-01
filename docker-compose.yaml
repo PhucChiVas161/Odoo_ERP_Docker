@@ -1,0 +1,21 @@
+services:
+    web:
+        image: odoo:18.0
+        container_name: odoo
+        depends_on:
+            - db
+        ports:
+            - '8069:8069'
+        volumes:
+            - ./addons:/mnt/extra-addons
+    db:
+        image: postgres
+        environment:
+            - POSTGRES_DB=postgres
+            - POSTGRES_PASSWORD=odoo
+            - POSTGRES_USER=odoo
+    mail:
+        image: axllent/mailpit:latest
+        ports:
+            - '1025:1025'
+            - '8025:8025'

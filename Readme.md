@@ -102,7 +102,7 @@
 4. Nhấp chuột phải vào vùng trống trong thư mục, giữ **Shift**, chọn **Open with Terminal** hoặc **Open with Command Prompt**.
 
 -   **MacOS**
-![Hướng dẫn sử dụng](/IMAGE/step4_mac.gif)
+    ![Hướng dẫn sử dụng](/IMAGE/step4_mac.gif)
 -   **Windows**
 
 5. Nhập lệnh sau để khởi chạy Odoo:
@@ -143,9 +143,17 @@
 
 4. Đợi một lúc và kiểm tra lại bằng cách truy cập:
 
-    ```
+    ```web
     http://localhost:8069
     ```
+
+---
+
+## Setup mail SMTP trên Odoo
+
+![alt text](/IMAGE/image.png)
+
+-   Setup cấu hình giống trong ảnh là được
 
 ---
 
@@ -164,6 +172,10 @@
 
 1. Mở **Command Prompt** (CMD) dưới quyền **Administrator**.
 2. Chạy lệnh sau:
+
+    ```sh
+    wsl --update
+    ```
 
     ```sh
     wsl --install --no-distribution
