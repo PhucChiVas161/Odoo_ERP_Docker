@@ -154,6 +154,11 @@
 ![alt text](/IMAGE/image.png)
 
 -   Setup cấu hình giống trong ảnh là được
+-   Sau đó truy cập vào link sau để check mail:
+
+    ```web
+    localhost:8025
+    ```
 
 ---
 
