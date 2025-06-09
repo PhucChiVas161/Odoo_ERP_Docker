@@ -149,7 +149,7 @@
 
 ---
 
-## Setup mail SMTP trên Odoo
+## Setup mail SMTP trên Odoo (Chỉ sử dụng khi chạy Docker)
 
 ![alt text](/IMAGE/image.png)
 
