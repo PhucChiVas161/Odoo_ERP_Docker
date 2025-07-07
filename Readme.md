@@ -164,8 +164,8 @@
 
 ## 🎥 Video Hướng Dẫn
 
--   **Windows**: [Xem video hướng dẫn](https://www.youtube.com/watch?v=FjjfyuB0In0)
--   **MacOS (Macbook, MacPro, iMac, v.v.)**: [Xem video hướng dẫn](https://www.youtube.com/watch?v=ZMmPEiG77Sg)
+-   **Windows**: [Xem video hướng dẫn](https://youtu.be/FjjfyuB0In0?si=B0ckapFkOBOtvGF4)
+-   **MacOS (Macbook, MacPro, iMac, v.v.)**: [Xem video hướng dẫn](https://youtu.be/ZMmPEiG77Sg?si=E-cYIltNPF8-TbRw)
 
 ---
 
