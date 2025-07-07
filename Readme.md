@@ -165,7 +165,14 @@
 ## 🎥 Video Hướng Dẫn
 
 -   **Windows**: [Xem video hướng dẫn](https://youtu.be/FjjfyuB0In0?si=B0ckapFkOBOtvGF4)
+
+<!-- iframe -->
+
 -   **MacOS (Macbook, MacPro, iMac, v.v.)**: [Xem video hướng dẫn](https://youtu.be/ZMmPEiG77Sg?si=E-cYIltNPF8-TbRw)
+
+<div>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/ZMmPEiG77Sg?si=E-cYIltNPF8-TbRw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
 
 ---
 
